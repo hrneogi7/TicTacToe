@@ -1,123 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:gravity="center"
-    android:background="@color/brown_faded"
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/brown_faded"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Tic Tac Toe"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:layout_weight="1"
+        android:paddingTop="50dp"
+        />
 
-
-    <TableRow
-        android:layout_marginBottom="3pt"
-        android:gravity="center"
-
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <Button
-            android:backgroundTint="@color/yellow_ochre"
-
-            android:id="@+id/bu1"
-            android:layout_width="42pt"
-            android:layout_height="42pt"
-            android:textColor="@color/red"
-            android:textStyle="bold"
-            android:layout_marginRight="5pt"
-            android:onClick="buClick" />
-
-        <Button
-            android:backgroundTint="@color/yellow_ochre"
-            android:id="@+id/bu2"
-            android:layout_width="42pt"
-            android:layout_height="42pt"
-            android:textColor="@color/red"
-            android:textStyle="bold"
-            android:layout_marginRight="5pt"
-            android:onClick="buClick" />
-
-        <Button
-            android:backgroundTint="@color/yellow_ochre"
-            android:id="@+id/bu3"
-            android:layout_width="42pt"
-            android:layout_height="42pt"
-            android:textColor="@color/red"
-            android:textStyle="bold"
-            android:onClick="buClick" />
-    </TableRow>
-
-    <TableRow
-        android:layout_marginBottom="3pt"
+        android:layout_height="0dp"
         android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_weight="3">
 
-        <Button
-            android:backgroundTint="@color/yellow_ochre"
-            android:id="@+id/bu4"
-            android:layout_width="42pt"
-            android:layout_height="42pt"
-            android:textColor="@color/red"
-            android:textStyle="bold"
-            android:layout_marginRight="5pt"
-            android:onClick="buClick" />
 
-        <Button
-            android:backgroundTint="@color/yellow_ochre"
-            android:id="@+id/bu5"
-            android:layout_width="42pt"
-            android:layout_height="42pt"
-            android:textColor="@color/red"
-            android:textStyle="bold"
-            android:layout_marginRight="5pt"
-            android:onClick="buClick" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3pt"
+            android:padding="0dp"
+            android:gravity="center">
 
-        <Button
-            android:backgroundTint="@color/yellow_ochre"
+            <Button
+                android:id="@+id/bu1"
+                android:layout_width="42pt"
+                android:layout_height="42pt"
+                android:layout_marginRight="5pt"
+                android:backgroundTint="@color/yellow_ochre"
+                android:onClick="buClick"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
 
-            android:id="@+id/bu6"
-            android:layout_width="42pt"
-            android:layout_height="42pt"
-            android:textColor="@color/red"
-            android:textStyle="bold"
-            android:onClick="buClick" />
-    </TableRow>
+            <Button
+                android:id="@+id/bu2"
+                android:layout_width="42pt"
+                android:layout_height="42pt"
+                android:layout_marginRight="5pt"
+                android:backgroundTint="@color/yellow_ochre"
+                android:onClick="buClick"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
 
-    <TableRow
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+            <Button
+                android:id="@+id/bu3"
+                android:layout_width="42pt"
+                android:layout_height="42pt"
+                android:backgroundTint="@color/yellow_ochre"
+                android:onClick="buClick"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+        </TableRow>
 
-        <Button
-            android:backgroundTint="@color/yellow_ochre"
-            android:id="@+id/bu7"
-            android:layout_width="42pt"
-            android:layout_height="42pt"
-            android:textColor="@color/red"
-            android:textStyle="bold"
-            android:layout_marginRight="5pt"
-            android:onClick="buClick" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3pt"
+            android:gravity="center">
 
-        <Button
-            android:backgroundTint="@color/yellow_ochre"
-            android:id="@+id/bu8"
-            android:layout_width="42pt"
-            android:layout_height="42pt"
-            android:textColor="@color/red"
-            android:textStyle="bold"
-            android:layout_marginRight="5pt"
-            android:onClick="buClick" />
+            <Button
+                android:id="@+id/bu4"
+                android:layout_width="42pt"
+                android:layout_height="42pt"
+                android:layout_marginRight="5pt"
+                android:backgroundTint="@color/yellow_ochre"
+                android:onClick="buClick"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
 
-        <Button
-            android:backgroundTint="@color/yellow_ochre"
-            android:id="@+id/bu9"
-            android:layout_width="42pt"
-            android:layout_height="42pt"
-            android:textColor="@color/red"
-            android:textStyle="bold"
-            android:onClick="buClick" />
-    </TableRow>
-</TableLayout>
+            <Button
+                android:id="@+id/bu5"
+                android:layout_width="42pt"
+                android:layout_height="42pt"
+                android:layout_marginRight="5pt"
+                android:backgroundTint="@color/yellow_ochre"
+                android:onClick="buClick"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bu6"
+
+                android:layout_width="42pt"
+                android:layout_height="42pt"
+                android:backgroundTint="@color/yellow_ochre"
+                android:onClick="buClick"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bu7"
+                android:layout_width="42pt"
+                android:layout_height="42pt"
+                android:layout_marginRight="5pt"
+                android:backgroundTint="@color/yellow_ochre"
+                android:onClick="buClick"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bu8"
+                android:layout_width="42pt"
+                android:layout_height="42pt"
+                android:layout_marginRight="5pt"
+                android:backgroundTint="@color/yellow_ochre"
+                android:onClick="buClick"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bu9"
+                android:layout_width="42pt"
+                android:layout_height="42pt"
+                android:backgroundTint="@color/yellow_ochre"
+                android:onClick="buClick"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50dp"
+        android:text="Restart"/>
+</LinearLayout>
